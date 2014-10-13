@@ -22,8 +22,8 @@ install_sources() {
     pushd $BUILD_DIR > /dev/null
 
     # get nasm
-    curl -f -O http://www.nasm.us/pub/nasm/releasebuilds/$NASM_VERSION/nasm-$NASM_VERSION.tar.gz
-    tar zxvf nasm-$NASM_VERSION.tar.gz
+    curl -f -O http://pkgs.fedoraproject.org/repo/pkgs/nasm/nasm-$NASM_VERSION.tar.bz2/3bbc8ed83115b8caf7931f35ec3bc5e0/nasm-$NASM_VERSION.tar.bz2
+    tar jxvf nasm-$NASM_VERSION.tar.bz2
 
     popd > /dev/null
 }
